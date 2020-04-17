@@ -1,0 +1,8 @@
+{
+  "name": "hooks_todo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/vivxz/hooks_todo.git",
+  "author": "<viviannquan@gmail.com>",
+  "license": "MIT"
+}
