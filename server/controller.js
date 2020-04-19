@@ -22,8 +22,11 @@ module.exports = {
   },
   update: function (req, res) {
     var params = req.params.id;
+    console.log('params = ', params);
     var bool = req.body.completed;
-    model.update([bool, params], (err, results) => {
+    var tak = req.body.task;
+    console.log('bool = ', bool)
+    model.update([tak, bool, params], (err, results) => {
       if (err) {
         console.error(err)
       } else {

@@ -14,7 +14,7 @@ module.exports = {
       })
     },
   update: function (params, callback) {
-    var queryStr = 'UPDATE todos SET completed = ? WHERE id = ?'
+    var queryStr = 'UPDATE todos SET task = ?, completed = ? WHERE id = ?'
     db.query(queryStr, params, (err, results) => {
       callback(err, results)
     })
